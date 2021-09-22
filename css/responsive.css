@@ -5,4 +5,14 @@
   .banner .banner-slogan h2.main-title {
     width: 60%;
   }
+
+  .choose-us .choose-us__content h3.sec-main-title {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .choose-us .choose-us__content p.sec-description-title {
+    width: 500px;
+    margin: 0 auto;
+  }
 }

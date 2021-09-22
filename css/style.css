@@ -1,6 +1,8 @@
 :root {
   --text-blue: #2e3192;
   --text-white: #fff;
+  --text-gray: #9fa4af;
+  --green-bg: #f1f8fc;
 }
 
 *,
@@ -33,7 +35,7 @@ p {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Saira", sans-serif;
 }
 
@@ -61,8 +63,37 @@ a {
   background: var(--text-blue);
 }
 
+.btn-border {
+  border: 1px solid var(--text-blue);
+  color: #000;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  cursor: pointer;
+}
+
 .ptb {
   padding: 5rem 0;
+}
+
+.ptb-lg {
+  padding: 16rem 0 5rem 0;
+}
+
+.sec-top-title {
+  text-transform: uppercase;
+  color: var(--text-blue);
+}
+
+.sec-main-title {
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.sec-description-title {
+  color: var(--text-gray);
 }
 
 /*********
@@ -96,4 +127,85 @@ BANNER CSS
   font-size: clamp(2.4rem, 5vw, 5rem);
   font-weight: 800;
   text-align: center;
+}
+
+/*********
+choose us 
+css
+**************/
+.choose-us {
+  padding-top: 5rem;
+}
+
+.choose-us .reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+}
+
+.choose-us .reasons .reason .reason-content.bg {
+  background: var(--text-blue);
+  color: var(--text-white);
+}
+
+.choose-us .choose-us__content h3 span {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.choose-us .reasons img {
+  width: 100%;
+}
+
+.choose-us .reasons .reason-content {
+  background: #fff;
+  padding: 35px 20px;
+  box-shadow: 9px -5px 43px -9px rgba(159, 164, 175, 0.75);
+  -webkit-box-shadow: 9px -5px 43px -9px rgba(159, 164, 175, 0.75);
+  -moz-box-shadow: 9px -5px 43px -9px rgba(159, 164, 175, 0.75);
+}
+
+.choose-us .reasons .reason-content p {
+  color: var(--text-gray);
+  padding-top: 10px;
+}
+
+/*********
+intro
+css
+**************/
+.intro {
+  background: var(--green-bg);
+  position: relative;
+  top: -180px;
+  z-index: -1;
+}
+.intro .intro__content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.intro .intro__content .intro__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.intro .intro__content .intro__stats h5 {
+  color: var(--text-blue);
+}
+
+.intro .intro__content .intro__stats p {
+  color: var(--text-gray);
+  padding: 5px 0;
+}
+
+.intro .intro__content h3 span {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.intro .intro__content a {
+  margin-top: 15px;
 }
