@@ -1,0 +1,8 @@
+/******
+600px and above
+**********/
+@media (min-width: 600px) {
+  .banner .banner-slogan h2.main-title {
+    width: 60%;
+  }
+}

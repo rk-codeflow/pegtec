@@ -1,0 +1,99 @@
+:root {
+  --text-blue: #2e3192;
+  --text-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Saira", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********
+
+ CLASSNAMES
+**************/
+.body-btn {
+  padding: 10px 20px;
+  color: var(--text-white);
+  text-transform: uppercase;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.btn-bg {
+  background: var(--text-blue);
+}
+
+.ptb {
+  padding: 5rem 0;
+}
+
+/*********
+BANNER CSS
+**************/
+.banner {
+  background: url(/img/banner.png) no-repeat center center / cover;
+  height: 100vh;
+}
+
+.banner .banner-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner .banner-slogan a {
+  margin-top: 30px;
+}
+
+.banner .banner-slogan p.sub-title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 5vw, 1.15rem);
+}
+
+.banner .banner-slogan h2.main-title {
+  color: var(--text-blue);
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  font-weight: 800;
+  text-align: center;
+}
