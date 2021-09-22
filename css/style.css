@@ -180,16 +180,17 @@ css
   top: -180px;
   z-index: -1;
 }
-.intro .intro__content {
+/* .intro .intro__content {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1.5rem;
-}
+} */
 
 .intro .intro__content .intro__stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 10px;
+  margin-top: 35px;
 }
 
 .intro .intro__content .intro__stats h5 {
